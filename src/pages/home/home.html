@@ -1,0 +1,45 @@
+<ion-header>
+    <ion-navbar color="food" text-center>
+        <ion-title>หน้าหลัก</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="welcome">
+    <div text-center>
+    <ion-list>
+      <ion-item>
+        <ion-label color="food">สายพันธุ์: </ion-label>
+        <ion-label color="food">{{g.gene}}</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label color="food">น้ำหนัก: </ion-label>
+        <ion-label color="food">{{w}}กิโลกรัม</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label color="food">ปริมาณอาหาร: </ion-label>
+        <ion-label color="food">{{food}}กรัมต่อวัน</ion-label>
+      </ion-item>
+
+      <ion-card>
+          <ion-label color="food">จ่ายอาหารอัตโนมัติ </ion-label>
+      <ion-item>
+        <ion-label color="food">ครั้งที่ 1: </ion-label>
+        <ion-label color="food">{{data.first}}</ion-label>
+    </ion-item>
+    <ion-item>
+        <ion-label color="food">ครั้งที่ 2 : </ion-label>
+        <ion-label color="food">{{data.six}}</ion-label>
+    </ion-item>
+  </ion-card>
+      <!-- <ion-item>
+        <ion-label color="food">การจ่ายอาหาร: </ion-label>
+        <ion-label color="food">{{release}}</ion-label>
+      </ion-item> -->
+
+    </ion-list>
+    <button ion-button round color="food" (click)="edit()">แก้ไขข้อมูล</button>
+    <button ion-button round color="food" (click)="delete()">ลบข้อมูล</button>
+  </div>
+</ion-content>

@@ -1,0 +1,25 @@
+<!--
+  Generated template for the ManualfoodPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar color="food">
+        <ion-title>กรอกปริมาณอาหาร</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding class="welcome">
+    <div text-center>
+  <ion-list>
+    <ion-item>
+      <ion-label color="food">ปริมาณอาหาร :</ion-label>
+      <ion-input type="number" [(ngModel)]="feed" placeholder="กรัม"></ion-input>
+    </ion-item>
+    </ion-list>
+    <!-- <ion-input type="number" [(ngModel)]="g1" placeholder="กรัม"></ion-input> -->
+    <button ion-button round  color="food" (click)="go()">จ่ายอาหาร</button>
+</div>
+</ion-content>

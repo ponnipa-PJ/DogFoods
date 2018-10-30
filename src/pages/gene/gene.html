@@ -1,0 +1,65 @@
+<ion-header>
+
+  <ion-navbar color="food">
+    <ion-title>เลือกข้อมูลสุนัข</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding id="welcome">
+  <div text-center>
+    <ion-item>
+      <ion-label color="food">สายพันธุ์</ion-label>
+      <ion-select #gene multiple="false" color="food" (ionChange)="onChange(gene.value)">
+        <ion-option *ngFor="let g of data.getGene()" value="{{g.id}}">{{g.gene}}</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label color="food">น้ำหนัก</ion-label>
+      <ion-select #weight multiple="false" (ionChange)="getFood(weight.value)">
+        <ion-option *ngFor="let w of weights" value="{{w.weight}}">{{w.weight}}</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label color="food">อาหาร</ion-label>
+      <ion-input right [(ngModel)]="food" type="number" disabled="true"></ion-input>
+    </ion-item>
+    <!-- <ion-item>
+      <ion-label color="food">สายพันธุ์</ion-label>
+      <ion-select #gene multiple="false" color="food" (ionChange)="onChange(gene.value)">
+        <ion-option *ngFor="let g of genes" value="{{g.id}}">{{g.gene}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="food">น้ำหนัก</ion-label>
+      <ion-select #weight multiple="false" (ionChange)="getFood(weight.value)">
+        <ion-option *ngFor="let w of weights" value="{{w.weight}}" required="true">{{w.weight}}</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label color="food">อาหาร</ion-label>
+      <ion-input text-align="right" [(ngModel)]="food" type="number" disabled="true"></ion-input>
+    </ion-item> -->
+
+    <!-- <ion-item>
+      <ion-label color="food">การจ่ายอาหาร</ion-label>
+      <ion-select [(ngModel)]="release">
+        <ion-option value="กำหนดเอง">กำหนดเอง</ion-option>
+        <ion-option value="อัตโนมัติ">อัตโนมัติ</ion-option>
+      </ion-select>
+    </ion-item> -->
+    <ion-item>
+      <ion-label color="food">กำหนดเวลาเริ่มต้น </ion-label>
+  </ion-item>
+  <ion-list> 
+      <ion-item>
+          <ion-input type="number" [(ngModel)]="data.Hours" placeholder="ชั่วโมง"></ion-input>
+          <ion-input type="number" [(ngModel)]="data.Minutes" placeholder="นาที"></ion-input>
+      </ion-item>
+  </ion-list>
+
+    <button ion-button block color="food" (click)="go_tabs(gene.value, weight.value)">บันทึก</button>
+  </div>
+</ion-content>

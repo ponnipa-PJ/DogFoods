@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar color="food" text-center>
+    <ion-title>
+      จ่ายอาหาร
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="welcome">
+  <div text-center>
+    <!-- <ion-list>
+      <ion-item>
+        <ion-label color="food">ปริมาณอาหาร :</ion-label>
+        <ion-input type="number" [(ngModel)]="feed" placeholder="กรัม"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button ion-button round color="food" (click)="go()">จ่ายอาหาร</button>
+  </div>
+</ion-content> -->
+<ion-card >
+    <ion-list radio-group>
+        <ion-item>
+          <ion-radio color="food" checked="false" value="textmanual" (click)="go_manual()"></ion-radio>
+          <ion-label>กำหนดเอง </ion-label>
+          </ion-item>
+        <ion-item>
+            <ion-radio color="food" checked="false" value="textauto"(click)="go_auto()"></ion-radio>
+            <ion-label>อัตโนมัติ </ion-label>
+            </ion-item>
+        </ion-list>
+      </ion-card>
+      </div>
+</ion-content>

@@ -1,0 +1,127 @@
+input,
+button {
+  margin-left: 4px;
+}
+
+input {
+  width: 83px;
+}
+
+button {
+  width: 87px;
+  padding: 5px 0px 5px 0px;
+}
+.containers {
+  margin: auto;
+  text-align: center;
+  min-width: 250%;
+  max-width: 100%;
+  height: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.attendances {
+  text-align: center;
+  height: 130px;
+  width: 200px;
+  float: left;
+  background-color: #1f1f1f;
+  margin: 5px 5% 5px 5%;
+  padding-bottom: 0px;
+  border-style: solid;
+  border-color: #111111 #4e4e4e #4e4e4e #111111;
+  border-width: 2px;
+  position: relative;
+}
+.attendances .title {
+  font-family: "Arial";
+  color: white;
+  font-size: 8pt;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px 0px 0px 0px;
+}
+
+.bars {
+  float: left;
+  width: 90%;
+  margin: 0px 5% 0px 5%;
+  height: 80px;
+  background-color: #2f2f2f;
+  position: relative;
+}
+
+.cages {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+.levels {
+  float: left;
+  height: 150px;
+  max-height: 200px;
+  width: 100%;
+  background-color: #6ae719;
+  position: absolute;
+  bottom: 0;
+}
+
+.container {
+  text-align: center;
+  margin: auto;
+  min-width: 90px;
+  max-width: 90px;
+  height: 350px;
+  position: relative;
+  width: 100%;
+}
+
+.attendance {
+  width: 50%;
+  float: left;
+  background-color: #1f1f1f;
+  margin: 7px 5% 5px 5%;
+  padding-bottom: 10px;
+  border-style: solid;
+  border-color: #111111 #4e4e4e #4e4e4e #111111;
+  border-width: 2px;
+  position: relative;
+}
+
+.attendance .title {
+  font-family: "Arial";
+  color: white;
+  font-size: 9pt;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px 0px 0px 0px;
+}
+
+.bar {
+  float: left;
+  width: 90%;
+  margin: 0px 5% 0px 5%;
+  height: 130px;
+  background-color: #2f2f2f;
+  position: relative;
+}
+
+
+.level {
+  float: left;
+  height: 150px;
+  max-height: 250px;
+  width: 100%;
+  background-color: #6ae719;
+  position: absolute;
+  bottom: 0;
+}
+
+#welcome{
+  background-image: url('../../assets/imgs/bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}

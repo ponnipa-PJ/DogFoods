@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar color="food" text-center>
+    <ion-title>
+      ตรวจสอบอาหาร
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding id="welcome">
+  <div text-center>
+    ถังอาหารคงเหลือ
+    <input type="number" disabled="true" placeholder="1759" [(ngModel)]="data.container" name="classrooms" min="0" step="5" />กรัม <br>
+    ปริมาณอาหารคงเหลือ
+    <input type="number" disabled="true" placeholder="1759" [(ngModel)]="data.food" name="classroom" min="0" step="5" />กรัม
+    <div class="containers">
+      <div class="attendances">
+        <p class="title">{{data.persents}}%</p>
+        <div class="bars" id="classrooms">
+          <div class="levels"></div>
+          <!-- <div class="cage">
+              </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="attendance">
+        <p class="title">{{data.persent}}%</p>
+        <div class="bar" id="classroom">
+          <div class="level"></div>
+          <!-- <div class="cage">
+            </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

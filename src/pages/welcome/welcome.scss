@@ -1,0 +1,21 @@
+page-welcome {
+    #welcome{
+        background-image: url('../../assets/imgs/background.png');
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: contain;
+        
+        h1{
+            color: #863c15;
+            font-size: 20px;
+            margin-top: 200px;
+            text-align: center;
+            // margin: auto;
+            // padding: 50px;
+        }
+        button{
+            font-size: 20px;
+            margin-top: 100px;
+        }
+}
+}
